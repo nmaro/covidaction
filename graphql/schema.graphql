@@ -1,0 +1,46 @@
+type Category {
+  id: ID!
+  name: String!
+  created: Date!
+  actions: [Action!]!
+}
+
+type Action {
+  id: ID!
+  title: String!
+  content: String!
+  created: Date!
+  categories: [Category!]!
+  user: User!
+  comments: [Comment!]!
+  userActions: [UserAction!]!
+}
+
+type User {
+  id: ID!
+  username: String!
+  created: Date!
+  userActions: [UserAction!]!
+  actions: [Action!]!
+  comments: [Comment!]!
+}
+
+type UserAction {
+  id: ID!
+  user: User!
+  action: Action!
+  created: Date!
+}
+
+type Comment {
+  id: ID!
+  content: String!
+  created: Date!
+  action: Action!
+  user: User!
+}
+
+type Query {
+  categories(name: String): [Category!]!
+  actions(): [Action!]!
+}

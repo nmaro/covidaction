@@ -1,0 +1,43 @@
+{
+  "name": "covidaction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.5",
+    "fb-sdk-wrapper": "^1.0.5",
+    "isomorphic-unfetch": "^3.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "markdown-it": "^10.0.0",
+    "markdown-it-link-attributes": "^3.0.0",
+    "moment": "^2.24.0",
+    "mongodb": "^3.5.5",
+    "next": "^9.3.3",
+    "postcss-import": "^12.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "scriptjs": "^2.5.9",
+    "simple-oauth2": "^3.3.0",
+    "tailwindcss": "^1.2.0",
+    "ulid": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.3.8",
+    "@types/markdown-it": "0.0.9",
+    "@types/mongodb": "^3.5.4",
+    "@types/node": "^13.9.8",
+    "@types/oauth": "^0.9.1",
+    "@types/react": "^16.9.31",
+    "@types/simple-oauth2": "^2.5.2",
+    "typescript": "^3.8.3"
+  }
+}
